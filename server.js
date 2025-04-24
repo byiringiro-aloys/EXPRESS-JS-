@@ -21,6 +21,7 @@ app.use('/',express.static(path.join(__dirname,'/public')))
 // routes
 app.use('/',require('./routes/root'))
 app.use('/employees',require('./routes/api/employees'))
+app.use('/register',require('./routes/api/register'))
 
 
 app.all(/^\/*/,(req,res)=>{
@@ -36,5 +37,5 @@ app.all(/^\/*/,(req,res)=>{
 app.use(errorHandler)
 
 app.listen(PORT,()=>{
-    console.log(`Server is listening on port ${PORT}.`)
+    console.log(`Server is running at http://localhost:${PORT}.`)
 })

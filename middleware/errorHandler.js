@@ -10,6 +10,7 @@ const errorHandler = function(err,req,res,next){
     Events.emit('err', ` Request info: { ${req.url} ${req.method} ${req.headers.origin} ${req.path} } Error encountered : { ${err.name} ${err.message} }`,'errLogs.txt')
     console.error(err.stack)
     res.status(500).send(`${err.message}`)
+    next()
     
 }
 
