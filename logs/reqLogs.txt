@@ -1,1 +1,11 @@
 2025-04-26	 16:03:57 1ea473df-0fd1-4bdf-a11a-fa0d40118d2c GET undefined /refresh
+2025-04-26	 16:18:13 1eddcf4f-2309-4474-89bc-4bdf63bc0a9a GET undefined /refresh
+2025-04-26	 16:18:13 1eddcf4f-2309-4474-89bc-4bdf63bc0a9a GET undefined /logout
+2025-04-26	 16:19:03 08e5493a-2e76-405b-86fb-eb24824217fe GET undefined /logout
+2025-04-26	 16:20:38 f274de2a-efa5-40b1-a9ce-face16008fc0 GET undefined /refresh
+2025-04-26	 16:20:38 f274de2a-efa5-40b1-a9ce-face16008fc0 GET undefined /logout
+2025-04-26	 16:20:38 f274de2a-efa5-40b1-a9ce-face16008fc0 POST undefined /auth
+2025-04-26	 16:21:05 03ec32b1-7bac-4339-ad7a-e2efb54d89e4 GET undefined /logout
+2025-04-26	 16:21:15 6822e243-6328-4841-b6ba-1798f451bed8 POST undefined /auth
+2025-04-26	 16:22:56 aa206348-37a4-4cbb-9f8a-482138ab88f6 GET undefined /refresh
+2025-04-26	 16:22:56 aa206348-37a4-4cbb-9f8a-482138ab88f6 GET undefined /logout

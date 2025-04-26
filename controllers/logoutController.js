@@ -11,13 +11,13 @@ const handleLogout = async (req,res)=>{
     if(!cookie?.jwt)return res.sendStatus(204)
     const refreshToken = cookie.jwt
     const foundUser = usersDB.users.find(person=>person.refreshToken === refreshToken)
-    const otherUsers = usersDB.users.filter(person=>person.refreshToken !== foundUser.refreshTokend)
+    const otherUsers = usersDB.users.filter(person=>person.refreshToken !== foundUser.refreshToken)
 
     const currentUser = {...foundUser,refreshToken:''}
-    usersDB.setUsers({...otherUsers,currentUser})
+    usersDB.setUsers([...otherUsers,currentUser])
     await fsPromises.writeFile(
         path.join(__dirname,'..','models','users.json'),
-        JSON.stringify(usersDB.users)
+        JSON.stringify(usersDB.users,null,2)
     )
     res.clearCookie('jwt',{httpOnly:true,maxAge:24*60*60*1000}) // secure:true -- only serves on https
     res.sendStatus(204)
