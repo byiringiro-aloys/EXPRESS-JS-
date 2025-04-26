@@ -4,8 +4,10 @@ const corsOptions = require('./config/cors')
 const errorHandler = require('./middleware/errorHandler')
 const app = express()
 const cors = require('cors')
-const path = require('path')                                                                                
-const PORT = process.env .PORT||3000
+const path = require('path')
+const cookieParser = require('cookie-parser')  
+const verifyJWT = require('./middleware/verifyJWT')                                                                             
+const PORT = process.env.PORT||3000
 
 app.use(logger)
 
@@ -15,13 +17,21 @@ app.use(express.urlencoded({extended:false}))
 
 app.use(express.json())
 
+// middleware for cookies
+app.use(cookieParser())
+
 // To serve static files
 app.use('/',express.static(path.join(__dirname,'/public')))
 
 // routes
 app.use('/',require('./routes/root'))
-app.use('/employees',require('./routes/api/employees'))
 app.use('/register',require('./routes/api/register'))
+app.use('/auth',require('./routes/api/login'))
+app.use('/refresh',require('./routes/api/refresh'))
+app.use('/logout',require('./routes/api/logout'))
+
+app.use(verifyJWT)
+app.use('/employees',require('./routes/api/employees'))
 
 
 app.all(/^\/*/,(req,res)=>{
@@ -37,5 +47,5 @@ app.all(/^\/*/,(req,res)=>{
 app.use(errorHandler)
 
 app.listen(PORT,()=>{
-    console.log(`Server is running at http://localhost:${PORT}.`)
+    console.log(`Server is running at http://localhost:${PORT}`)
 })

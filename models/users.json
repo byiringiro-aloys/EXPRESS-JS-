@@ -1,1 +1,12 @@
-[{"username":"admin","password":"$2b$10$ZpuOE7xlB8no9nBrZS4h.eKsxV10KnGCjZiz28IDEmSNcriiofw1q"},{"username":"aloys","password":"$2b$10$gqObxSdtoLVPUW3EQPVxAOj.KI/cT7.dSYy8weEWmxgT/RZmBBl5a"}]
+[
+  {
+    "username": "aloys",
+    "password": "$2b$10$wExoMrVrsBOXPiwGZLFYmO2YEFfAI3GjP0Nw3/0apbYvKpnk2uEDy",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsb3lzIiwiaWF0IjoxNzQ1Njc1OTQwLCJleHAiOjE3NDU3NjIzNDB9.dJRUkyDdWG1_dWndSS1Vnb-DXzq-YWeEJSgvNkOrl10"
+  },
+  {
+    "username": "admin",
+    "password": "$2b$10$LxO.DahC9YZR88JIEZOCM.g4KKrSjVaImy5KLY3W.z1MkIhVvSQOC",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQ1Njc1OTg0LCJleHAiOjE3NDU3NjIzODR9.rcT0OhmMH0xAlZCMxQGRSSIR1hTSjYM5bpAFkIgsroc"
+  }
+]

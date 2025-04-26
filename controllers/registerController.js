@@ -5,7 +5,7 @@ const usersDB = {
 
 const fsPromises = require('fs').promises;
 const path = require('path');
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
 
 const handleNewUser = async (req,res)=>{
     const {user,password} = req.body;
@@ -21,10 +21,11 @@ const handleNewUser = async (req,res)=>{
             "username":user,
             "password":hashedPasword
         }
-        usersDB.setUsers([...usersDB.users,newUser])
+        const otherUsers = usersDB.users.filter(person=>person.username !== user)
+        usersDB.setUsers([...otherUsers,newUser])
         await fsPromises.writeFile(
             path.join(__dirname,'..','models','users.json'),
-            JSON.stringify(usersDB.users)+'\n'
+            JSON.stringify(usersDB.users,null,2)
         );
         res.status(201).json({"success":`New user ${user} was created successfully.`})
     }catch(err){

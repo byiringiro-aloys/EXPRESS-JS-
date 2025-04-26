@@ -1,3 +1,0 @@
-2025-04-24	 17:50:55 73f22259-f05c-4e04-a0ac-367577d40143  Request info: { /user GET undefined /user } Error encountered : { TypeError Cannot destructure property 'user' of 'req.body' as it is undefined. }
-2025-04-24	 18:17:22 7684ac5d-9fe4-4099-bc58-23291e4b3a73  Request info: { /register POST undefined /register } Error encountered : { Error Cannot set headers after they are sent to the client }
-2025-04-24	 18:18:29 d54b3d03-ac09-4590-9cdd-c4ed614c7cec  Request info: { /register POST undefined /register } Error encountered : { Error Cannot set headers after they are sent to the client }

@@ -26,7 +26,7 @@ const logger = (req,res,next)=>{
     class MyEVENTS extends events{};
     const EVENTS = new MyEVENTS();
     EVENTS.on('log',(msg,fName)=>userLogs(msg,fName))
-    EVENTS.emit('log',`${req.method} ${req.headers.origin} ${req.headers.from} ${req.path}`,'reqLogs.txt')
+    EVENTS.emit('log',`${req.method} ${req.headers.origin} ${req.path}`,'reqLogs.txt')
     next()
 }
 
