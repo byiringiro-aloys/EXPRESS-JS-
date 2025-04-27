@@ -37,7 +37,7 @@ const handleLogin = async (req,res)=>{
             path.join(__dirname,'..','models','users.json'),
             JSON.stringify(usersDB.users,null,2)
         )
-        res.cookie('jwt',refreshToken,{httpOnly:true,maxAge:24*60*60*1000});
+        res.cookie('jwt',refreshToken,{httpOnly:true,sameSite:'None',secure:true,maxAge:24*60*60*1000}); // secure:true in production
         res.status(200).json({"accessToken ":accessToken});
     }catch(err){
         res.status(500).json({"message":"Authentication failed. Please try again in a moment."})

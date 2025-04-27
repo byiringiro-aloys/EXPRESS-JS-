@@ -9,3 +9,12 @@
 2025-04-26	 16:21:15 6822e243-6328-4841-b6ba-1798f451bed8 POST undefined /auth
 2025-04-26	 16:22:56 aa206348-37a4-4cbb-9f8a-482138ab88f6 GET undefined /refresh
 2025-04-26	 16:22:56 aa206348-37a4-4cbb-9f8a-482138ab88f6 GET undefined /logout
+2025-04-26	 19:37:01 7f249548-a1f7-4ea4-a5aa-9562fbed6202 GET undefined /
+2025-04-26	 19:37:01 7f249548-a1f7-4ea4-a5aa-9562fbed6202 GET undefined /img/Rwanda.jpg
+2025-04-26	 19:37:01 7f249548-a1f7-4ea4-a5aa-9562fbed6202 GET undefined /favicon.ico
+2025-04-26	 20:04:15 89d2e47e-dd47-4993-863b-286565f2d8e7 GET undefined /
+2025-04-26	 20:04:15 89d2e47e-dd47-4993-863b-286565f2d8e7 GET undefined /img/Rwanda.jpg
+2025-04-26	 20:04:15 89d2e47e-dd47-4993-863b-286565f2d8e7 GET undefined /favicon.ico
+2025-04-26	 21:01:00 0b6e361c-496b-4335-8e5b-b797d38ff47a GET undefined /
+2025-04-26	 21:01:00 0b6e361c-496b-4335-8e5b-b797d38ff47a GET undefined /img/Rwanda.jpg
+2025-04-26	 21:01:00 0b6e361c-496b-4335-8e5b-b797d38ff47a GET undefined /favicon.ico
