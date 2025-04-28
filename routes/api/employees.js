@@ -8,9 +8,9 @@ const verifyRoles = require('../../middleware/verifyRoles')
 
 router.route('/')
         .get(employeesController.getAllEmployees)
-        .post(verifyRoles(rolesList.Admin),employeesController.createNewEmployees)
-        .put(verifyRoles(rolesList.Editor),employeesController.updateEmployees)
-        .patch(verifyRoles(rolesList.Admin),employeesController.partiallyUpdateEmployees)
+        .post(verifyRoles(rolesList.Admin,rolesList.Editor),employeesController.createNewEmployees)
+        .put(verifyRoles(rolesList.Admin,rolesList.Editor),employeesController.updateEmployees)
+        .patch(verifyRoles(rolesList.Admin,rolesList.Editor),employeesController.partiallyUpdateEmployees)
         .delete(verifyRoles(rolesList.Admin),employeesController.deleteEmployees);
 
 router.route('/:id')
