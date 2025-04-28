@@ -8,8 +8,8 @@ const path = require('path');
 const bcrypt = require('bcrypt');
 
 const handleNewUser = async (req,res)=>{
-    const {user,password} = req.body;
-    if(!user||!password)return res.status(400).json({"message":"Username and password are required."})
+    const {user,role,password} = req.body;
+    if(!user||!password||!role)return res.status(400).json({"message":"Username, role and password are required."})
     // check for duplicates in username in db
     const duplicate = usersDB.users.find(person=>person.username === user)
     if(duplicate){
@@ -19,6 +19,7 @@ const handleNewUser = async (req,res)=>{
         const hashedPasword = await bcrypt.hash(password,10)
         const newUser = {
             "username":user,
+            "roles":role,
             "password":hashedPasword
         }
         const otherUsers = usersDB.users.filter(person=>person.username !== user)

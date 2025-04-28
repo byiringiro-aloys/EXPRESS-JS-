@@ -1,1 +1,10 @@
 2025-04-27	 21:56:03 0784bcc8-a7d2-47ca-b544-7359483f4772  Request info: { /auth POST undefined /auth } Error encountered : { Error Cannot set headers after they are sent to the client }
+2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /employees?id=1 DELETE undefined /employees } Error encountered : { TypeError Cannot read properties of undefined (reading 'id') }
+2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /logout POST undefined /logout } Error encountered : { TypeError Cannot read properties of undefined (reading 'refreshToken') }
+2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /logout POST undefined /logout } Error encountered : { TypeError Cannot read properties of undefined (reading 'refreshToken') }
+2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /employees PUT undefined /employees } Error encountered : { SyntaxError Expected ':' after property name in JSON at position 11 (line 3 column 1) }
+2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /employees PUT undefined /employees } Error encountered : { SyntaxError Expected ':' after property name in JSON at position 11 (line 3 column 1) }
+2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /employees PUT undefined /employees } Error encountered : { SyntaxError Expected ':' after property name in JSON at position 11 (line 3 column 1) }
+2025-04-28	 18:24:36 0c62bf63-80f5-4590-ac7b-9f5e3d1bbcba  Request info: { /logout POST undefined /logout } Error encountered : { TypeError Cannot read properties of undefined (reading 'refreshToken') }
+2025-04-28	 18:24:36 0c62bf63-80f5-4590-ac7b-9f5e3d1bbcba  Request info: { /employees PUT undefined /employees } Error encountered : { SyntaxError Expected ':' after property name in JSON at position 11 (line 3 column 1) }
+2025-04-28	 18:24:36 0c62bf63-80f5-4590-ac7b-9f5e3d1bbcba  Request info: { /employees PUT undefined /employees } Error encountered : { SyntaxError Expected ':' after property name in JSON at position 11 (line 3 column 1) }

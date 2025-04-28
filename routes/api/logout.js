@@ -3,7 +3,7 @@ const router = express.Router()
 const handleLogout = require('../../controllers/logoutController')
 
 router.route('/')
-        .get(handleLogout.handleLogout)
+        .post(handleLogout.handleLogout)
 
 
 module.exports = router
