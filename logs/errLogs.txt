@@ -1,0 +1,1 @@
+2025-04-27	 21:56:03 0784bcc8-a7d2-47ca-b544-7359483f4772  Request info: { /auth POST undefined /auth } Error encountered : { Error Cannot set headers after they are sent to the client }

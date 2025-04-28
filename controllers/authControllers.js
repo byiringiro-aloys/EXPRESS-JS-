@@ -14,7 +14,7 @@ const handleLogin = async (req,res)=>{
         res.status(400).json({"message":"Both username and password are required."})
     }
     const foundUser = usersDB.users.find(person=>person.username === user)
-    if(!foundUser){return res.sendStatus(401)}
+    if(!foundUser) return res.sendStatus(401)
     try{
         const match = await bcrypt.compare(password,foundUser.password)
         if(!match){
