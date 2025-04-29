@@ -11,14 +11,16 @@ const handleNewUser = async (req,res)=>{
         res.status(409).json({"message":"Username already exists."})
     }else{
     try{
+
         const hashedPasword = await bcrypt.hash(password,10);
         //create and store the new user.
         const result = await User.create({
             "username":user,
             "roles":role,
             "password":hashedPasword
-        });         
+        }); 
         res.status(201).json({"success":`New user ${user} was created successfully.`})
+        
     }catch(err){
         res.status(500).json({"message":err.message})
     }
