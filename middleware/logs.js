@@ -21,7 +21,6 @@ const userLogs = async (message,fName)=>{
 }
 
 const logger = (req,res,next)=>{
-    console.log(`${req.method} ${req.path}`)
     class MyEVENTS extends events{};
     const EVENTS = new MyEVENTS();
     EVENTS.on('log',(msg,fName)=>userLogs(msg,fName))

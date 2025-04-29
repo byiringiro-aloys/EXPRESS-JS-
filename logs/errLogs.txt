@@ -1,10 +1,21 @@
-2025-04-27	 21:56:03 0784bcc8-a7d2-47ca-b544-7359483f4772  Request info: { /auth POST undefined /auth } Error encountered : { Error Cannot set headers after they are sent to the client }
-2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /employees?id=1 DELETE undefined /employees } Error encountered : { TypeError Cannot read properties of undefined (reading 'id') }
-2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /logout POST undefined /logout } Error encountered : { TypeError Cannot read properties of undefined (reading 'refreshToken') }
-2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /logout POST undefined /logout } Error encountered : { TypeError Cannot read properties of undefined (reading 'refreshToken') }
-2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /employees PUT undefined /employees } Error encountered : { SyntaxError Expected ':' after property name in JSON at position 11 (line 3 column 1) }
-2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /employees PUT undefined /employees } Error encountered : { SyntaxError Expected ':' after property name in JSON at position 11 (line 3 column 1) }
-2025-04-28	 17:57:19 eb942c94-1d51-4508-8ff4-a60b04d21933  Request info: { /employees PUT undefined /employees } Error encountered : { SyntaxError Expected ':' after property name in JSON at position 11 (line 3 column 1) }
-2025-04-28	 18:24:36 0c62bf63-80f5-4590-ac7b-9f5e3d1bbcba  Request info: { /logout POST undefined /logout } Error encountered : { TypeError Cannot read properties of undefined (reading 'refreshToken') }
-2025-04-28	 18:24:36 0c62bf63-80f5-4590-ac7b-9f5e3d1bbcba  Request info: { /employees PUT undefined /employees } Error encountered : { SyntaxError Expected ':' after property name in JSON at position 11 (line 3 column 1) }
-2025-04-28	 18:24:36 0c62bf63-80f5-4590-ac7b-9f5e3d1bbcba  Request info: { /employees PUT undefined /employees } Error encountered : { SyntaxError Expected ':' after property name in JSON at position 11 (line 3 column 1) }
+2025-04-29	 13:04:46 d2fa5767-1caa-4022-bb5a-c4aaba62055e  Request info: { /employees/1 GET undefined /employees/1 } Error encountered : { Error Cannot set headers after they are sent to the client }
+2025-04-29	 13:10:11 226b77b3-620a-4c52-8858-6361442eb855  Request info: { /employees POST undefined /employees } Error encountered : { ReferenceError data is not defined }
+2025-04-29	 13:16:58 518f4e02-b5bb-455e-92e6-5621f6c09493  Request info: { /employees PUT undefined /employees } Error encountered : { TypeError employee.save is not a function }
+2025-04-29	 13:16:58 518f4e02-b5bb-455e-92e6-5621f6c09493  Request info: { /employees PUT undefined /employees } Error encountered : { TypeError employee.save is not a function }
+2025-04-29	 13:16:58 518f4e02-b5bb-455e-92e6-5621f6c09493  Request info: { /employees PUT undefined /employees } Error encountered : { TypeError employee.save is not a function }
+2025-04-29	 14:44:31 a85d2260-11a9-414b-bb81-ca9373fc2154  Request info: { /employees DELETE undefined /employees } Error encountered : { TypeError Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle }
+2025-04-29	 14:52:10 e31b6685-26d7-482a-a679-d3a5e5faa00b  Request info: { /employees DELETE undefined /employees } Error encountered : { CastError Cast to ObjectId failed for value "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsyODAwLDM3MDAsNTIwMF19LCJpYXQiOjE3NDU5MzExODUsImV4cCI6MTc0NTkzMTIxNX0.OCtcxuGjrxeN3ZKQ5b96flTLhLeP_2QZ52sx73sgu6U" (type string) at path "_id" for model "Employee" }
+2025-04-29	 14:52:10 e31b6685-26d7-482a-a679-d3a5e5faa00b  Request info: { /employees DELETE undefined /employees } Error encountered : { TypeError Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle }
+2025-04-29	 14:52:10 e31b6685-26d7-482a-a679-d3a5e5faa00b  Request info: { /employees DELETE undefined /employees } Error encountered : { TypeError Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle }
