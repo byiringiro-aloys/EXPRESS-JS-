@@ -10,7 +10,6 @@ const dateLogs = format(new Date(), 'yyyy-MM-dd\t HH:mm:ss')
 
 
 const userLogs = async (message,fName)=>{
-    console.log(`${dateLogs} ${userIdLogs} ${message}`)
     if(!fs.existsSync(path.join(__dirname,'..','logs'))){
         await fsPromises.mkdir(path.join(__dirname,'..','logs'))
     }

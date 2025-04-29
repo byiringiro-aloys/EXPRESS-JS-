@@ -9,6 +9,10 @@ const cookieParser = require('cookie-parser')
 const verifyJWT = require('./middleware/verifyJWT')  
 const credentials = require('./middleware/credentials')                                                                           
 const PORT = process.env.PORT||3000
+const mongoose = require('mongoose')
+const connectDB = require('./config/dbConnection')
+
+connectDB()
 
 app.use(logger)
 
@@ -49,6 +53,9 @@ app.all(/^\/*/,(req,res)=>{
 
 app.use(errorHandler)
 
-app.listen(PORT,()=>{
-    console.log(`Server is running at http://localhost:${PORT}`)
+mongoose.connection.once('open',()=>{
+    console.log('Connected to MongoDB.');
+    app.listen(PORT,()=>{
+        console.log(`Server is running at http://localhost:${PORT}`)
+    })
 })

@@ -172,3 +172,6 @@
 2025-04-28	 18:24:36 0c62bf63-80f5-4590-ac7b-9f5e3d1bbcba PATCH undefined /employees
 2025-04-28	 18:24:36 0c62bf63-80f5-4590-ac7b-9f5e3d1bbcba DELETE undefined /employees
 2025-04-28	 18:25:23 56f0a73e-f815-442c-9b89-a1af8d18b024 POST undefined /logout
+2025-04-29	 07:34:43 4bd3b03b-fbcf-4b5c-a5e2-ae0eddf9ccc5 POST undefined /register
+2025-04-29	 07:34:43 4bd3b03b-fbcf-4b5c-a5e2-ae0eddf9ccc5 POST undefined /register
+2025-04-29	 07:58:25 0a6d7e20-d9c7-4731-8125-60b766e42b63 POST undefined /register
